@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+app.use(express.static("public"));
+
 app.listen(3030, (req, res) => console.log("Todo ok"));
 
 app.get("/", (req, res) =>
